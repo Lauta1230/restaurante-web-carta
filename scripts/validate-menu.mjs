@@ -21,6 +21,9 @@ const expectedCounts = {
   espumantes: 1, copas: 6
 };
 const errors = [];
+const digitalMenuSource = fs.readFileSync('src/components/DigitalMenu.jsx', 'utf8');
+if (/querySelector\(`\[data-nav=[^\n]+scrollIntoView/.test(digitalMenuSource)) errors.push('La sincronización de categorías volvió a usar scrollIntoView y puede mover el viewport vertical.');
+if (!/nav\.scrollTo\(\{ left, behavior: 'smooth' \}\)/.test(digitalMenuSource)) errors.push('La categoría activa no conserva su desplazamiento exclusivamente horizontal.');
 if (products.length !== 140) errors.push(`Se esperaban 140 productos; hay ${products.length}.`);
 if (categories.length !== 29) errors.push(`Se esperaban 29 categorías; hay ${categories.length}.`);
 if (new Set(products.map(product => product.id)).size !== products.length) errors.push('Hay IDs de producto duplicados.');
