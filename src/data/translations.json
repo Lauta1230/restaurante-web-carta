@@ -1,0 +1,185 @@
+{
+  "ES": {
+    "nav": {
+      "home": "Inicio",
+      "menu": "Carta",
+      "story": "La experiencia",
+      "location": "Ubicación",
+      "reserve": "Reservar",
+      "assistance": "Asistencia"
+    },
+    "hero": {
+      "eyebrow": "Parrilla · Vino · Mendoza",
+      "title": "Estancia\nLa Pasión",
+      "subtitle": "Cocina argentina, fuego y encuentro en el corazón de Mendoza.",
+      "primary": "Ver la carta",
+      "secondary": "Reservar"
+    },
+    "intro": {
+      "eyebrow": "Nuestra esencia",
+      "title": "Mendoza en la mesa",
+      "text": "Una experiencia nacida del fuego, el producto y la cultura del vino. Tradición argentina expresada con sensibilidad contemporánea."
+    },
+    "menu": {
+      "eyebrow": "La carta",
+      "title": "Sabores con origen",
+      "text": "La selección gastronómica estará disponible en la próxima fase.",
+      "cta": "Explorar la carta",
+      "status": "Próximamente"
+    },
+    "fire": {
+      "eyebrow": "El fuego",
+      "title": "El ritual de la parrilla",
+      "text": "Tiempo, brasa y oficio. El corazón de la cocina argentina, presentado sin artificios."
+    },
+    "wine": {
+      "eyebrow": "Territorio",
+      "title": "Vino y cordillera",
+      "text": "Mendoza acompaña cada momento: su paisaje, sus bodegas y una identidad que se descubre en la copa."
+    },
+    "visit": {
+      "eyebrow": "Visitanos",
+      "title": "En el corazón de Mendoza",
+      "address": "Av. Sarmiento 785",
+      "city": "Ciudad de Mendoza, Argentina",
+      "map": "Ver ubicación"
+    },
+    "dock": {
+      "menu": "Carta",
+      "book": "Reservas",
+      "whatsapp": "WhatsApp",
+      "help": "Asistencia"
+    },
+    "footer": {
+      "tagline": "Cocina argentina · Mendoza",
+      "note": "Carta digital y canales oficiales."
+    },
+    "modal": {
+      "title": "Muy pronto",
+      "text": "Esta función estará disponible en una próxima fase.",
+      "close": "Cerrar"
+    }
+  },
+  "EN": {
+    "nav": {
+      "home": "Home",
+      "menu": "Menu",
+      "story": "Experience",
+      "location": "Location",
+      "reserve": "Reserve",
+      "assistance": "Assistance"
+    },
+    "hero": {
+      "eyebrow": "Grill · Wine · Mendoza",
+      "title": "Estancia\nLa Pasión",
+      "subtitle": "Argentine cuisine, fire and gathering in the heart of Mendoza.",
+      "primary": "View menu",
+      "secondary": "Reserve"
+    },
+    "intro": {
+      "eyebrow": "Our essence",
+      "title": "Mendoza at the table",
+      "text": "An experience born from fire, local produce and wine culture. Argentine tradition with a contemporary sensibility."
+    },
+    "menu": {
+      "eyebrow": "The menu",
+      "title": "Flavours with origin",
+      "text": "Our gastronomic selection will be available in the next phase.",
+      "cta": "Explore menu",
+      "status": "Coming soon"
+    },
+    "fire": {
+      "eyebrow": "The fire",
+      "title": "The ritual of the grill",
+      "text": "Time, embers and craft. The heart of Argentine cuisine, presented without artifice."
+    },
+    "wine": {
+      "eyebrow": "Our land",
+      "title": "Wine and mountains",
+      "text": "Mendoza is present in every moment: its landscape, wineries and an identity revealed in each glass."
+    },
+    "visit": {
+      "eyebrow": "Visit us",
+      "title": "In the heart of Mendoza",
+      "address": "Av. Sarmiento 785",
+      "city": "Mendoza City, Argentina",
+      "map": "View location"
+    },
+    "dock": {
+      "menu": "Menu",
+      "book": "Reserve",
+      "whatsapp": "WhatsApp",
+      "help": "Assistance"
+    },
+    "footer": {
+      "tagline": "Argentine cuisine · Mendoza",
+      "note": "Digital menu and official channels."
+    },
+    "modal": {
+      "title": "Coming soon",
+      "text": "This feature will be available in a future phase.",
+      "close": "Close"
+    }
+  },
+  "PT": {
+    "nav": {
+      "home": "Início",
+      "menu": "Cardápio",
+      "story": "Experiência",
+      "location": "Localização",
+      "reserve": "Reservar",
+      "assistance": "Assistência"
+    },
+    "hero": {
+      "eyebrow": "Parrilla · Vinho · Mendoza",
+      "title": "Estancia\nLa Pasión",
+      "subtitle": "Cozinha argentina, fogo e encontro no coração de Mendoza.",
+      "primary": "Ver cardápio",
+      "secondary": "Reservar"
+    },
+    "intro": {
+      "eyebrow": "Nossa essência",
+      "title": "Mendoza à mesa",
+      "text": "Uma experiência que nasce do fogo, do produto e da cultura do vinho. Tradição argentina com sensibilidade contemporânea."
+    },
+    "menu": {
+      "eyebrow": "O cardápio",
+      "title": "Sabores com origem",
+      "text": "A seleção gastronômica estará disponível na próxima fase.",
+      "cta": "Explorar cardápio",
+      "status": "Em breve"
+    },
+    "fire": {
+      "eyebrow": "O fogo",
+      "title": "O ritual da parrilla",
+      "text": "Tempo, brasa e ofício. O coração da cozinha argentina, apresentado sem artifícios."
+    },
+    "wine": {
+      "eyebrow": "Território",
+      "title": "Vinho e cordilheira",
+      "text": "Mendoza acompanha cada momento: sua paisagem, suas vinícolas e uma identidade revelada na taça."
+    },
+    "visit": {
+      "eyebrow": "Visite-nos",
+      "title": "No coração de Mendoza",
+      "address": "Av. Sarmiento 785",
+      "city": "Cidade de Mendoza, Argentina",
+      "map": "Ver localização"
+    },
+    "dock": {
+      "menu": "Cardápio",
+      "book": "Reservar",
+      "whatsapp": "WhatsApp",
+      "help": "Assistência"
+    },
+    "footer": {
+      "tagline": "Cozinha argentina · Mendoza",
+      "note": "Cardápio digital e canais oficiais."
+    },
+    "modal": {
+      "title": "Em breve",
+      "text": "Esta função estará disponível em uma próxima fase.",
+      "close": "Fechar"
+    }
+  }
+}

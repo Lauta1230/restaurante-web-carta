@@ -1,0 +1,50 @@
+{
+  "restaurant": {
+    "name": "Estancia La Pasión",
+    "address": "Av. Sarmiento 785",
+    "city": "Ciudad de Mendoza, Argentina",
+    "whatsapp": "5492616694496",
+    "openingTime": "12:00",
+    "closingTime": "23:30",
+    "timeZone": "America/Argentina/Mendoza"
+  },
+  "languages": ["ES", "EN", "PT"],
+  "social": {
+    "instagram": "https://www.instagram.com/restauranteestancialapasion/",
+    "googleMaps": "https://maps.app.goo.gl/YJ88hoA9GAVYTgad7"
+  },
+  "socialIncentive": {
+    "enabled": false,
+    "title": {
+      "es": "Un detalle de la casa",
+      "en": "A little something from us",
+      "pt": "Um detalhe da casa"
+    },
+    "text": {
+      "es": "Seguinos en Instagram y presentá esta pantalla al mozo.",
+      "en": "Follow us on Instagram and show this screen to your waiter.",
+      "pt": "Siga-nos no Instagram e mostre esta tela ao garçom."
+    }
+  },
+  "currency": {
+    "base": "ARS",
+    "default": "ARS",
+    "available": ["ARS", "USD", "BRL"],
+    "rates": {
+      "USD": 0,
+      "BRL": 0
+    },
+    "rateMeaning": "1 ARS equals the configured amount of the target currency",
+    "exchangeRateUpdatedAt": null,
+    "conversionEnabled": true
+  },
+  "features": {
+    "menu": "active",
+    "reservations": "active",
+    "assistance": "active",
+    "whatsapp": "active",
+    "sommelier": "active",
+    "feedback": "active",
+    "social": "active"
+  }
+}

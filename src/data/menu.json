@@ -1,0 +1,1378 @@
+{
+  "version": 2,
+  "status": "official",
+  "source": "Carta oficial — 11 páginas provistas por el restaurante",
+  "currency": "ARS",
+  "categories": [
+    {
+      "id": "entradas",
+      "name": {
+        "es": "Entradas",
+        "en": "Starters",
+        "pt": "Entradas"
+      }
+    },
+    {
+      "id": "carnes",
+      "name": {
+        "es": "Carnes",
+        "en": "Meats",
+        "pt": "Carnes"
+      }
+    },
+    {
+      "id": "platos-elaborados",
+      "name": {
+        "es": "Platos elaborados",
+        "en": "Prepared dishes",
+        "pt": "Pratos elaborados"
+      }
+    },
+    {
+      "id": "adicionales",
+      "name": {
+        "es": "Adicionales",
+        "en": "Extras",
+        "pt": "Adicionais"
+      }
+    },
+    {
+      "id": "veggies",
+      "name": {
+        "es": "Veggies",
+        "en": "Veggies",
+        "pt": "Veggies"
+      }
+    },
+    {
+      "id": "pastas",
+      "name": {
+        "es": "Pastas",
+        "en": "Pasta",
+        "pt": "Massas"
+      }
+    },
+    {
+      "id": "guarniciones",
+      "name": {
+        "es": "Guarniciones",
+        "en": "Side dishes",
+        "pt": "Acompanhamentos"
+      }
+    },
+    {
+      "id": "menu-infantil",
+      "name": {
+        "es": "Menú infantil",
+        "en": "Kids’ menu",
+        "pt": "Menu infantil"
+      },
+      "note": {
+        "es": "Hasta los 12 años",
+        "en": "Up to 12 years old",
+        "pt": "Até 12 anos"
+      }
+    },
+    {
+      "id": "ensaladas",
+      "name": {
+        "es": "Ensaladas",
+        "en": "Salads",
+        "pt": "Saladas"
+      }
+    },
+    {
+      "id": "postres",
+      "name": {
+        "es": "Postres",
+        "en": "Desserts",
+        "pt": "Sobremesas"
+      }
+    },
+    {
+      "id": "infusiones",
+      "name": {
+        "es": "Infusiones",
+        "en": "Hot drinks",
+        "pt": "Infusões"
+      }
+    },
+    {
+      "id": "bebidas",
+      "name": {
+        "es": "Bebidas",
+        "en": "Drinks",
+        "pt": "Bebidas"
+      }
+    },
+    {
+      "id": "cervezas",
+      "name": {
+        "es": "Cervezas",
+        "en": "Beers",
+        "pt": "Cervejas"
+      }
+    },
+    {
+      "id": "tragos",
+      "name": {
+        "es": "Tragos",
+        "en": "Cocktails",
+        "pt": "Drinks"
+      }
+    },
+    {
+      "id": "bajativos",
+      "name": {
+        "es": "Bajativos",
+        "en": "Digestifs",
+        "pt": "Digestivos"
+      }
+    },
+    {
+      "id": "whisky-whiskey",
+      "name": {
+        "es": "Whisky/Whiskey",
+        "en": "Whisky/Whiskey",
+        "pt": "Whisky/Whiskey"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "entradas-mollejas-a-la-chapa",
+      "category": "entradas",
+      "name": {
+        "es": "Mollejas a la chapa",
+        "en": "Frying panmadegizzard.",
+        "pt": "Moelas à Chapa."
+      },
+      "priceARS": 19800,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 2
+    },
+    {
+      "id": "entradas-empanada-cuyana-150-g-1-unidad",
+      "category": "entradas",
+      "name": {
+        "es": "Empanada cuyana 150 g (1 unidad)",
+        "en": "Empanadas from the Cuyo (1 unit)",
+        "pt": "Empanada “Cuyana” (1 unidade)"
+      },
+      "priceARS": 3900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Carne cortada a cuchillo y masa casera.",
+        "en": "Chopped meat and homemade dough.",
+        "pt": "Carne picada com faca e massa caseira."
+      },
+      "sourcePage": 2
+    },
+    {
+      "id": "entradas-degustacion-de-empanadas",
+      "category": "entradas",
+      "name": {
+        "es": "Degustación de empanadas",
+        "en": "Tasting of empanadas",
+        "pt": "Degustação de empanadas"
+      },
+      "priceARS": 9000,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Morcilla y nuez, tres quesos y cuyana.",
+        "en": "Blood sausage and nut; blue cheese; and cuyana.",
+        "pt": "Morcela e noz; queijo azul e “cuyana”."
+      },
+      "sourcePage": 2
+    },
+    {
+      "id": "entradas-provoleta",
+      "category": "entradas",
+      "name": {
+        "es": "Provoleta",
+        "en": "Provolone cheese.",
+        "pt": "Provolone grelhado."
+      },
+      "priceARS": 16800,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 2
+    },
+    {
+      "id": "carnes-bife-de-chorizo-u-ojo-de-bife-lomo-veteado",
+      "category": "carnes",
+      "name": {
+        "es": "Bife de chorizo u ojo de bife (Lomo veteado)",
+        "en": "Rump steak or Ribeye",
+        "pt": "Bife de chorizo (contrafilé) ou miolo do contrafilé"
+      },
+      "priceARS": 25700,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Grill de 250 gr. Con guarnición.",
+        "en": "Grill of 250 gr. With served side dish.",
+        "pt": "Grill de 250 gr. Com guarnição."
+      },
+      "detail": {
+        "es": "250 gr.",
+        "en": "250 gr.",
+        "pt": "250 gr."
+      },
+      "sourcePage": 2
+    },
+    {
+      "id": "carnes-bife-de-chorizo-u-ojo-de-bife-lomo-veteado-2",
+      "category": "carnes",
+      "name": {
+        "es": "Bife de chorizo u ojo de bife (Lomo veteado)",
+        "en": "Rump steak or Ribeye",
+        "pt": "Bife de chorizo (contrafilé) ou miolo do contrafilé"
+      },
+      "priceARS": 37900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Grill de 500 gr. Con guarnición.",
+        "en": "Grill of 500 gr. With served side dish.",
+        "pt": "Grill de 500 gr. Com guarnição."
+      },
+      "detail": {
+        "es": "500 gr.",
+        "en": "500 gr.",
+        "pt": "500 gr."
+      },
+      "sourcePage": 2
+    },
+    {
+      "id": "carnes-bife-de-chorizo-u-ojo-de-bife-lomo-veteado-3",
+      "category": "carnes",
+      "name": {
+        "es": "Bife de chorizo u ojo de bife (Lomo veteado)",
+        "en": "Rump steak or Ribeye",
+        "pt": "Bife de chorizo (contrafilé) ou miolo do contrafilé"
+      },
+      "priceARS": 65000,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Grill de 1 kg. Con guarnición.",
+        "en": "Grill of 1 kg. With trimming.",
+        "pt": "Grill de 1 kg. Com guarnição."
+      },
+      "detail": {
+        "es": "1 kg.",
+        "en": "1 kg.",
+        "pt": "1 kg."
+      },
+      "sourcePage": 2
+    },
+    {
+      "id": "carnes-solomillo-vacuno-filet",
+      "category": "carnes",
+      "name": {
+        "es": "Solomillo vacuno (Filet)",
+        "en": "Sirloin steak/fillet",
+        "pt": "Lombinho bovino (filé)"
+      },
+      "priceARS": 25700,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Grill de 250 gr. C/guarnición.",
+        "en": "Grill of 250 gr. With served side dish.",
+        "pt": "Grill de 250 gr. Com guarnição."
+      },
+      "sourcePage": 2
+    },
+    {
+      "id": "carnes-entrana",
+      "category": "carnes",
+      "name": {
+        "es": "Entraña",
+        "en": "Thin skirt steak",
+        "pt": "Entranha"
+      },
+      "priceARS": 35000,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "450 gr. C/guarnición.",
+        "en": "450 gr. With served side dish.",
+        "pt": "450 gr. Com guarnição."
+      },
+      "sourcePage": 2
+    },
+    {
+      "id": "carnes-entrana-para-compartir",
+      "category": "carnes",
+      "name": {
+        "es": "Entraña para compartir",
+        "en": "Thin skirt steak to share",
+        "pt": "Entranha para compartilhar"
+      },
+      "priceARS": 59000,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "900 gr. C/guarnición.",
+        "en": "900 gr. With served side dish.",
+        "pt": "900 gr. Com guarnição."
+      },
+      "sourcePage": 3
+    },
+    {
+      "id": "carnes-costilla",
+      "category": "carnes",
+      "name": {
+        "es": "Costilla",
+        "en": "Beef ribs",
+        "pt": "Costelas"
+      },
+      "priceARS": 28900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "500 gr. C/guarnición.",
+        "en": "500 gr. With served side dish.",
+        "pt": "500 gr. Com guarnição."
+      },
+      "sourcePage": 3
+    },
+    {
+      "id": "carnes-vacio-cima",
+      "category": "carnes",
+      "name": {
+        "es": "Vacío (Cima)",
+        "en": "Flank steak (top of it)",
+        "pt": "Vazio (fraldinha)"
+      },
+      "priceARS": 39000,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Grill de 500 gr. C/guarnición.",
+        "en": "Grill of 500 gr. With served side dish.",
+        "pt": "Grill de 500 gr. Com guarnição."
+      },
+      "sourcePage": 3
+    },
+    {
+      "id": "carnes-picana",
+      "category": "carnes",
+      "name": {
+        "es": "Picaña",
+        "en": "Rump cap",
+        "pt": "Picanha"
+      },
+      "priceARS": 25900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "500 gr. C/guarnición.",
+        "en": "500 gr. With served side dish.",
+        "pt": "500 gr. Com guarnição."
+      },
+      "sourcePage": 3
+    },
+    {
+      "id": "carnes-matambre-de-cerdo",
+      "category": "carnes",
+      "name": {
+        "es": "Matambre de cerdo",
+        "en": "Pork flank steak",
+        "pt": "Matambre de porco"
+      },
+      "priceARS": 25800,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Corte de 500 gr. C/guarnición.",
+        "en": "Cut of 500 gr. With served side dish.",
+        "pt": "Corte de 500 gr. Com guarnição."
+      },
+      "sourcePage": 3
+    },
+    {
+      "id": "carnes-suprema-grill-al-limon",
+      "category": "carnes",
+      "name": {
+        "es": "Suprema grill al limón",
+        "en": "Grilled chicken breast cooked in lemon",
+        "pt": "Peito de frango grelhado com limão"
+      },
+      "priceARS": 20900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "C/guarnición.",
+        "en": "With served side dish.",
+        "pt": "Com guarnição."
+      },
+      "sourcePage": 3
+    },
+    {
+      "id": "carnes-parrilla-p-2-personas",
+      "category": "carnes",
+      "name": {
+        "es": "Parrilla p/2 personas",
+        "en": "Two-person grill",
+        "pt": "Churrasco p/2 pessoas"
+      },
+      "priceARS": 47900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Lomo veteado, vacío, costilla, matambre de cerdo, pollo, mollejas, chorizo/morcilla. C/guarnición.",
+        "en": "Ribeye, flank steak, short ribs, pork flank steak, grilled chicken, sweetbreads, sausages/blood sausages, and skirt steak. Served with a side dish.",
+        "pt": "Lombo marmoreado, costela, moela, matambre de porco, frango, e linguiça/morcela. Com acompanhamento."
+      },
+      "sourcePage": 3
+    },
+    {
+      "id": "carnes-parrilla-seleccion-p-2-personas",
+      "category": "carnes",
+      "name": {
+        "es": "Parrilla selección p/2 personas",
+        "en": "Two-person grill selection (minimum 3 cuts)"
+      },
+      "priceARS": 62900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "(MÍNIMO 3 CORTES) Elije los cortes que desee entre vacío, entraña, molleja, lomo, costilla, matambre de cerdo, morcilla, chorizo, pollo. C/guarnición.",
+        "en": "Choose from the following cuts: flank steak, skirt steak, sweetbreads, ribeye, short ribs, pork flank steak, blood sausages, sausages, or grilled chicken. Served with a side dish."
+      },
+      "sourcePage": 3
+    },
+    {
+      "id": "platos-elaborados-vacio-tiernizado",
+      "category": "platos-elaborados",
+      "name": {
+        "es": "Vacío tiernizado",
+        "en": "Tenderized flank steak",
+        "pt": "Vazio (fraldinha) amaciado"
+      },
+      "priceARS": 28900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Grill 500 gr. Acompañado con papas y zanahorias asadas.",
+        "en": "Grill 500 gr. Accompanied by roasted potatoes and carrots.",
+        "pt": "Grill 500 gr. Acompanhado com batatas e cenouras grelhadas."
+      },
+      "sourcePage": 4
+    },
+    {
+      "id": "platos-elaborados-bondiola-de-cerdo-a-la-mostaza-y-miel",
+      "category": "platos-elaborados",
+      "name": {
+        "es": "Bondiola de cerdo a la mostaza y miel",
+        "en": "Pork tenderloin cooked in mustard and honey",
+        "pt": "Bondiola (paleta) de porco com mostarda e mel"
+      },
+      "priceARS": 23900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Grill de 500 gr. de carne magra c/guarnición.",
+        "en": "Grill of 500 gr. of lean meat. With served side dish.",
+        "pt": "Grill de 500 gr. de carne magra guarnição."
+      },
+      "sourcePage": 4
+    },
+    {
+      "id": "platos-elaborados-matambre-vacuno-tiernizado-a-la-pizza",
+      "category": "platos-elaborados",
+      "name": {
+        "es": "Matambre vacuno tiernizado a la pizza",
+        "en": "Beef roulade/flank steak tenderied a la pizza",
+        "pt": "Matambre bobino amaciado à pizza"
+      },
+      "priceARS": 26800,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Tomate, queso azul y muzarella.",
+        "en": "Tomato, blue cheese, and mozzarella cheese.",
+        "pt": "Tomate, queijo azul e muçarela."
+      },
+      "sourcePage": 4
+    },
+    {
+      "id": "platos-elaborados-matambre-vac-tiernizado-a-la-pizza-p-compartir",
+      "category": "platos-elaborados",
+      "name": {
+        "es": "Matambre vac. tiernizado a la pizza p/compartir",
+        "en": "Beef roulade/flank steak tenderied a la pizza to share",
+        "pt": "Matambre bobino amaciado à pizza para compartilhar"
+      },
+      "priceARS": 48900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Tomate, queso azul y muzarella.",
+        "en": "Tomato, blue cheese, and mozzarella cheese.",
+        "pt": "Tomate, queijo azul e muçarela."
+      },
+      "sourcePage": 4
+    },
+    {
+      "id": "platos-elaborados-milanesa-a-la-napolitana-de-pollo-carne",
+      "category": "platos-elaborados",
+      "name": {
+        "es": "Milanesa a la napolitana de pollo carne",
+        "en": "Neapolitan-style (with tomatoes sauce and cheese)"
+      },
+      "priceARS": 24900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "C/ guarnición.",
+        "en": "With served side dish.",
+        "pt": "Milanesa à napolitana. Com guarnição."
+      },
+      "sourcePage": 4
+    },
+    {
+      "id": "platos-elaborados-milanesa-de-pollo-o-carne",
+      "category": "platos-elaborados",
+      "name": {
+        "es": "Milanesa de pollo o carne",
+        "en": "Meat or chicken milanesa",
+        "pt": "Frango ou carne à milanesa"
+      },
+      "priceARS": 22900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "C/ guarnición.",
+        "en": "With served side dish.",
+        "pt": "Com guarnição."
+      },
+      "sourcePage": 4
+    },
+    {
+      "id": "adicionales-morcilla",
+      "category": "adicionales",
+      "name": {
+        "es": "Morcilla"
+      },
+      "priceARS": 3500,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 4
+    },
+    {
+      "id": "adicionales-chorizo",
+      "category": "adicionales",
+      "name": {
+        "es": "Chorizo"
+      },
+      "priceARS": 4500,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 4
+    },
+    {
+      "id": "veggies-berenjena-a-la-napolitana",
+      "category": "veggies",
+      "name": {
+        "es": "Berenjena a la napolitana",
+        "en": "Neapolitan-style Eggplant",
+        "pt": "Berinjela à napolitana"
+      },
+      "priceARS": 14900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Berenjena rebozada a la pizza con tomate y queso. c/guarnición.",
+        "en": "Eggplant with tomatoes and cheese. With served side dish.",
+        "pt": "Berinjela milanesa à pizza com tomate e queijo. Com guarnição."
+      },
+      "sourcePage": 4
+    },
+    {
+      "id": "pastas-velo-de-pasta-relleno",
+      "category": "pastas",
+      "name": {
+        "es": "Velo de pasta relleno",
+        "en": "Stuffed pasta",
+        "pt": "Pasta rellene"
+      },
+      "priceARS": 19500,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Rellenos de calabaza, almendras y mozzarella.",
+        "en": "Stuffed with pumpkin, mozzarella cheese and almonds.",
+        "pt": "Recheados de abóbora, muçarela e amêndoas."
+      },
+      "sourcePage": 5
+    },
+    {
+      "id": "pastas-pappardelle-relleno",
+      "category": "pastas",
+      "name": {
+        "es": "Pappardelle relleno",
+        "en": "Pappardelle",
+        "pt": "Pappardelle"
+      },
+      "priceARS": 19500,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Rellenos de lomo con champiñón.",
+        "en": "Stuffed with sirloin and mushroom.",
+        "pt": "Recheados de lombo com cogumelo."
+      },
+      "sourcePage": 5
+    },
+    {
+      "id": "guarniciones-vegetales-asados",
+      "category": "guarniciones",
+      "name": {
+        "es": "Vegetales asados",
+        "en": "Grilled vegetables",
+        "pt": "Vegetais grelhados"
+      },
+      "priceARS": 10900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Zanahoria, zucchini, cebolla, pimientos, zapallo y berenjena.",
+        "en": "Carrot, zucchini, onion, peppers, squash and eggplant.",
+        "pt": "Cenoura, abobrinha, cebola, pimentão, abóbora e berinjela."
+      },
+      "sourcePage": 5
+    },
+    {
+      "id": "guarniciones-papas-fritas",
+      "category": "guarniciones",
+      "name": {
+        "es": "Papas fritas",
+        "en": "Fries",
+        "pt": "Batatas fritas"
+      },
+      "priceARS": 8900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 5
+    },
+    {
+      "id": "guarniciones-pure-de-papa-o-boniato",
+      "category": "guarniciones",
+      "name": {
+        "es": "Puré de papa o boniato",
+        "en": "Mashed potatoes or sweet potatoes",
+        "pt": "Purê de batata - batata doce."
+      },
+      "priceARS": 8000,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 5
+    },
+    {
+      "id": "guarniciones-ensalada-mixta",
+      "category": "guarniciones",
+      "name": {
+        "es": "Ensalada mixta",
+        "en": "Mixed",
+        "pt": "Mista"
+      },
+      "priceARS": 8000,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Lechuga, choclo, zanahoria, tomate.",
+        "en": "Lettuce, corn, carrot and tomato.",
+        "pt": "Alface, milho, cenoura e tomate."
+      },
+      "sourcePage": 5
+    },
+    {
+      "id": "guarniciones-papas-a-la-crema",
+      "category": "guarniciones",
+      "name": {
+        "es": "Papas a la crema",
+        "en": "Creamed potatoes"
+      },
+      "priceARS": 9900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 5
+    },
+    {
+      "id": "menu-infantil-milanesa-de-pollo-o-carne",
+      "category": "menu-infantil",
+      "name": {
+        "es": "Milanesa de pollo o carne",
+        "en": "Meat or chicken milanesa",
+        "pt": "Frango ou carne à milanesa"
+      },
+      "priceARS": 14900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "C/guarnición.",
+        "en": "With served side dish.",
+        "pt": "Com guarnição."
+      },
+      "sourcePage": 5
+    },
+    {
+      "id": "menu-infantil-bife-de-lomo",
+      "category": "menu-infantil",
+      "name": {
+        "es": "Bife de lomo",
+        "en": "Sirloin steak",
+        "pt": "Bife de lombo"
+      },
+      "priceARS": 14900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Grill 200 gr. C/guarnición.",
+        "en": "Grill of 200 gr. With served side dish.",
+        "pt": "Grill de 200 gr. Com guarnição."
+      },
+      "sourcePage": 5
+    },
+    {
+      "id": "menu-infantil-fideos-o-arroz",
+      "category": "menu-infantil",
+      "name": {
+        "es": "Fideos o arroz"
+      },
+      "priceARS": 9900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 5
+    },
+    {
+      "id": "ensaladas-huerta",
+      "category": "ensaladas",
+      "name": {
+        "es": "Huerta",
+        "en": "From the Orchard",
+        "pt": "Da horta"
+      },
+      "priceARS": 8900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Zanahoria, remolacha, tomate, choclo, repollo.",
+        "en": "Carrot, beet root, tomato, corn and cabbage.",
+        "pt": "Cenoura, beterraba, tomate, milho, repolho."
+      },
+      "sourcePage": 6
+    },
+    {
+      "id": "ensaladas-capresse",
+      "category": "ensaladas",
+      "name": {
+        "es": "Capresse",
+        "en": "Capresse",
+        "pt": "Caprese"
+      },
+      "priceARS": 8900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Queso blando, tomate, albahaca.",
+        "en": "Soft chesse, tomato, basil.",
+        "pt": "Queijo, tomate e manjericão."
+      },
+      "sourcePage": 6
+    },
+    {
+      "id": "ensaladas-campesina",
+      "category": "ensaladas",
+      "name": {
+        "es": "Campesina",
+        "en": "Campesina",
+        "pt": "Campesina"
+      },
+      "priceARS": 8900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Hojas verdes, palta, tomates cherry, huevo, panceta y nuez.",
+        "en": "Green leaves, avocado, cherry tomatoes, eggs, bacon and nut.",
+        "pt": "Folhas verdes, abacate, tomate cereja, ovo, bacon e nozes."
+      },
+      "sourcePage": 6
+    },
+    {
+      "id": "ensaladas-cesar",
+      "category": "ensaladas",
+      "name": {
+        "es": "César",
+        "en": "César",
+        "pt": "César"
+      },
+      "priceARS": 11900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Hojas verdes, crutones, pollo, parmensano, salsa césar.",
+        "en": "Green leaves, bread croutons, chiken and cesar sause veggie.",
+        "pt": "Folhas verdes, croutons, frango e molho césar."
+      },
+      "sourcePage": 6
+    },
+    {
+      "id": "ensaladas-zonas-azules",
+      "category": "ensaladas",
+      "name": {
+        "es": "Zonas azules",
+        "en": "Crispy sweet potato",
+        "pt": "Batata-doce crocante"
+      },
+      "priceARS": 18000,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Batata crocante, tomates, aceitunas, queso pecorino, palta, cebolla morada, nueces, hojas verdes de estación.",
+        "en": "Tomatoes, olives, pecorino cheese, avocado, red onion, walnuts, seasonal green leaves.",
+        "pt": "Tomates, azeitonas, queijo pecorino, abacate, cebola roxa e nozes, folhas verdes sazonais."
+      },
+      "sourcePage": 6
+    },
+    {
+      "id": "postres-flan-casero",
+      "category": "postres",
+      "name": {
+        "es": "Flan casero"
+      },
+      "priceARS": 7500,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Con dulce de leche o crema chantilli."
+      },
+      "sourcePage": 6
+    },
+    {
+      "id": "postres-tiramisu",
+      "category": "postres",
+      "name": {
+        "es": "Tiramisú"
+      },
+      "priceARS": 8900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 6
+    },
+    {
+      "id": "postres-cr-me-br-lee",
+      "category": "postres",
+      "name": {
+        "es": "Crème brûlée"
+      },
+      "priceARS": 8900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 6
+    },
+    {
+      "id": "postres-la-pasion-pavlova",
+      "category": "postres",
+      "name": {
+        "es": "La Pasión Pavlova"
+      },
+      "priceARS": 8900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 6
+    },
+    {
+      "id": "postres-lemonchamp",
+      "category": "postres",
+      "name": {
+        "es": "Lemonchamp"
+      },
+      "priceARS": 8900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Helado de limón, frutos rojos y vino espumante."
+      },
+      "sourcePage": 6
+    },
+    {
+      "id": "postres-copa-helada-la-pasion",
+      "category": "postres",
+      "name": {
+        "es": "Copa helada La Pasión"
+      },
+      "priceARS": 8500,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Ganache, helado, crema de frutilla, baño de chocolate y maní crocante."
+      },
+      "sourcePage": 6
+    },
+    {
+      "id": "infusiones-espresso-cortado",
+      "category": "infusiones",
+      "name": {
+        "es": "Espresso/Cortado"
+      },
+      "priceARS": 3000,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 6
+    },
+    {
+      "id": "infusiones-espresso-doble-cortado-doble",
+      "category": "infusiones",
+      "name": {
+        "es": "Espresso doble/Cortado doble"
+      },
+      "priceARS": 3800,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 6
+    },
+    {
+      "id": "infusiones-infusion",
+      "category": "infusiones",
+      "name": {
+        "es": "Infusión"
+      },
+      "priceARS": 1900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 6
+    },
+    {
+      "id": "bebidas-coca-zero",
+      "category": "bebidas",
+      "name": {
+        "es": "Coca/Zero"
+      },
+      "priceARS": 3900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "bebidas-agua-con-gas-sin-gas",
+      "category": "bebidas",
+      "name": {
+        "es": "Agua con gas/Sin gas"
+      },
+      "priceARS": 3900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "bebidas-agua-saborizada",
+      "category": "bebidas",
+      "name": {
+        "es": "Agua saborizada"
+      },
+      "priceARS": 3900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Naranja, pera, pomelo, manzana."
+      },
+      "sourcePage": 7
+    },
+    {
+      "id": "bebidas-fanta-zero",
+      "category": "bebidas",
+      "name": {
+        "es": "Fanta/Zero"
+      },
+      "priceARS": 3900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "bebidas-sprite-zero",
+      "category": "bebidas",
+      "name": {
+        "es": "Sprite/Zero"
+      },
+      "priceARS": 3900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "bebidas-schweppes-de-pomelo",
+      "category": "bebidas",
+      "name": {
+        "es": "Schweppes de pomelo"
+      },
+      "priceARS": 3900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "bebidas-agua-tonica-lata",
+      "category": "bebidas",
+      "name": {
+        "es": "Agua tónica lata"
+      },
+      "priceARS": 3900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "bebidas-limonada-la-pasion-500-cc",
+      "category": "bebidas",
+      "name": {
+        "es": "Limonada La Pasión 500 cc"
+      },
+      "priceARS": 6100,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Limón, Menta, Almibar de Jengibre."
+      },
+      "sourcePage": 7
+    },
+    {
+      "id": "cervezas-patagonia-730-ml",
+      "category": "cervezas",
+      "name": {
+        "es": "Patagonia 730 ml"
+      },
+      "priceARS": 9400,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "cervezas-corona-710-ml",
+      "category": "cervezas",
+      "name": {
+        "es": "Corona 710 ml"
+      },
+      "priceARS": 9400,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "cervezas-corona-330-ml",
+      "category": "cervezas",
+      "name": {
+        "es": "Corona 330 ml"
+      },
+      "priceARS": 5400,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "cervezas-patagonia-lata-473-ml",
+      "category": "cervezas",
+      "name": {
+        "es": "Patagonia- lata 473 ml"
+      },
+      "priceARS": 4900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "cervezas-quilmes-lata-473-ml",
+      "category": "cervezas",
+      "name": {
+        "es": "Quilmes - lata 473 ml"
+      },
+      "priceARS": 4900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "cervezas-heineken-lata-473-ml",
+      "category": "cervezas",
+      "name": {
+        "es": "Heineken- lata 473 ml"
+      },
+      "priceARS": 4900,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "tragos-fernet-branca-medida-100-cc-coca",
+      "category": "tragos",
+      "name": {
+        "es": "Fernet Branca medida (100 cc) + Coca"
+      },
+      "priceARS": 9400,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "tragos-fernet-medida-100-cc",
+      "category": "tragos",
+      "name": {
+        "es": "Fernet medida (100 cc)"
+      },
+      "priceARS": 5500,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "tragos-gin-tonic-beefeater",
+      "category": "tragos",
+      "name": {
+        "es": "Gin Tonic (Beefeater)"
+      },
+      "priceARS": 8800,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Pomelo- limón-naranja-pepino- mix de pimientas."
+      },
+      "sourcePage": 7
+    },
+    {
+      "id": "tragos-gin-tonic-frutos-rojos-beefeater",
+      "category": "tragos",
+      "name": {
+        "es": "Gin Tonic frutos rojos (Beefeater)"
+      },
+      "priceARS": 9200,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "tragos-aperol-spritz",
+      "category": "tragos",
+      "name": {
+        "es": "Aperol Spritz"
+      },
+      "priceARS": 8300,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "description": {
+        "es": "Aperol, espumante, dash de soda."
+      },
+      "sourcePage": 7
+    },
+    {
+      "id": "bajativos-grappa-candolini-50-cc",
+      "category": "bajativos",
+      "name": {
+        "es": "Grappa Candolini 50 cc"
+      },
+      "priceARS": 6000,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "bajativos-licor-strega-50-cc",
+      "category": "bajativos",
+      "name": {
+        "es": "Licor Strega 50 cc"
+      },
+      "priceARS": 5000,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "whisky-whiskey-johnnie-walker-black-label-50-cc",
+      "category": "whisky-whiskey",
+      "name": {
+        "es": "Johnnie Walker Black Label 50 cc"
+      },
+      "priceARS": 12000,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "whisky-whiskey-jack-daniels-50-cc",
+      "category": "whisky-whiskey",
+      "name": {
+        "es": "Jack Daniels 50 cc"
+      },
+      "priceARS": 11000,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    },
+    {
+      "id": "whisky-whiskey-jameson-50-cc",
+      "category": "whisky-whiskey",
+      "name": {
+        "es": "Jameson 50 cc"
+      },
+      "priceARS": 7500,
+      "image": null,
+      "thumbnail": null,
+      "alt": {},
+      "tags": [],
+      "sourcePage": 7
+    }
+  ]
+}
