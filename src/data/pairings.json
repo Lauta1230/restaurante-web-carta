@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "description": "Relaciones de maridaje funcionales con vinos existentes en la carta oficial.",
+  "pairings": [
+    {
+      "productIds": [
+        "carnes-bife-de-chorizo-u-ojo-de-bife-lomo-veteado",
+        "carnes-bife-de-chorizo-u-ojo-de-bife-lomo-veteado-2",
+        "carnes-bife-de-chorizo-u-ojo-de-bife-lomo-veteado-3"
+      ],
+      "recommendations": [
+        { "wineId": "malbec-san-felipe-roble", "reason": { "es": "Un Malbec para acompañar carnes grilladas y cortes de intensidad media-alta.", "en": "A Malbec to accompany grilled meats and medium-to-high intensity cuts.", "pt": "Um Malbec para acompanhar carnes grelhadas e cortes de intensidade média-alta." } },
+        { "wineId": "malbec-rutini-coleccion", "reason": { "es": "Una alternativa Malbec de la carta para un maridaje de perfil más complejo.", "en": "An alternative Malbec from the menu for a more complex pairing.", "pt": "Uma alternativa Malbec da carta para uma harmonização de perfil mais complexo." } }
+      ]
+    },
+    {
+      "productIds": ["carnes-solomillo-vacuno-filet"],
+      "recommendations": [
+        { "wineId": "malbec-la-linda", "reason": { "es": "El carácter del Malbec acompaña el filet sin desplazar el protagonismo del corte.", "en": "The character of Malbec accompanies the fillet without overpowering the cut.", "pt": "O caráter do Malbec acompanha o filé sem tirar o protagonismo do corte." } },
+        { "wineId": "cabernet-franc-gran-enemigo-gualtallary", "reason": { "es": "Un Cabernet Franc para una alternativa de mayor intensidad y complejidad.", "en": "A Cabernet Franc for an alternative with greater intensity and complexity.", "pt": "Um Cabernet Franc como alternativa de maior intensidade e complexidade." } }
+      ]
+    },
+    {
+      "productIds": ["carnes-entrana", "carnes-entrana-para-compartir"],
+      "recommendations": [
+        { "wineId": "cabernet-sauvignon-alambrado", "reason": { "es": "La estructura del Cabernet Sauvignon acompaña un corte intenso a la parrilla.", "en": "The structure of Cabernet Sauvignon accompanies an intense grilled cut.", "pt": "A estrutura do Cabernet Sauvignon acompanha um corte intenso na parrilla." } },
+        { "wineId": "malbec-angelica-zapata", "reason": { "es": "Una opción Malbec de perfil premium para prolongar la intensidad del plato.", "en": "A premium-profile Malbec option to extend the intensity of the dish.", "pt": "Uma opção Malbec de perfil premium para prolongar a intensidade do prato." } }
+      ]
+    },
+    {
+      "productIds": ["carnes-costilla"],
+      "recommendations": [
+        { "wineId": "malbec-trumpeter-2", "reason": { "es": "Un Malbec de la carta para equilibrar la intensidad de la costilla.", "en": "A Malbec from the menu to balance the intensity of the ribs.", "pt": "Um Malbec da carta para equilibrar a intensidade da costela." } },
+        { "wineId": "blends-roccaforte", "reason": { "es": "Un blend como alternativa de perfil más complejo para carnes asadas.", "en": "A blend as a more complex alternative for roasted meats.", "pt": "Um blend como alternativa de perfil mais complexo para carnes assadas." } }
+      ]
+    },
+    {
+      "productIds": ["carnes-vacio-cima", "platos-elaborados-vacio-tiernizado"],
+      "recommendations": [
+        { "wineId": "malbec-zuccardi-serie-a", "reason": { "es": "El Malbec acompaña la textura y la intensidad media-alta del vacío.", "en": "Malbec accompanies the texture and medium-to-high intensity of flank steak.", "pt": "O Malbec acompanha a textura e a intensidade média-alta do vazio." } },
+        { "wineId": "malbec-d-v-catena", "reason": { "es": "Otra expresión de Malbec para un maridaje de perfil más complejo.", "en": "Another expression of Malbec for a more complex pairing.", "pt": "Outra expressão de Malbec para uma harmonização de perfil mais complexo." } }
+      ]
+    },
+    {
+      "productIds": ["carnes-picana"],
+      "recommendations": [
+        { "wineId": "malbec-santa-julia", "reason": { "es": "Una opción Malbec equilibrada para acompañar la picaña grillada.", "en": "A balanced Malbec option to accompany grilled picanha.", "pt": "Uma opção Malbec equilibrada para acompanhar a picanha grelhada." } },
+        { "wineId": "cabernet-franc-zuccardi-q", "reason": { "es": "Un Cabernet Franc para sumar estructura a un corte de sabor marcado.", "en": "A Cabernet Franc to add structure to a distinctly flavoured cut.", "pt": "Um Cabernet Franc para acrescentar estrutura a um corte de sabor marcante." } }
+      ]
+    },
+    {
+      "productIds": ["carnes-matambre-de-cerdo"],
+      "recommendations": [
+        { "wineId": "varietales-trumpeter-reserva-pinot-noir", "reason": { "es": "El Pinot Noir ofrece una alternativa tinta para una carne de intensidad más suave.", "en": "Pinot Noir offers a red-wine alternative for a more delicate meat.", "pt": "O Pinot Noir oferece uma alternativa tinta para uma carne de intensidade mais suave." } },
+        { "wineId": "malbec-la-linda", "reason": { "es": "Un Malbec equilibrado para quienes prefieren un tinto de mayor presencia.", "en": "A balanced Malbec for those who prefer a red with greater presence.", "pt": "Um Malbec equilibrado para quem prefere um tinto de maior presença." } }
+      ]
+    },
+    {
+      "productIds": ["carnes-suprema-grill-al-limon"],
+      "recommendations": [
+        { "wineId": "chardonnay-san-felipe-roble", "reason": { "es": "Un Chardonnay acompaña una preparación de pollo y limón sin sumar excesiva intensidad.", "en": "A Chardonnay accompanies chicken and lemon without adding excessive intensity.", "pt": "Um Chardonnay acompanha a preparação de frango e limão sem acrescentar intensidade excessiva." } },
+        { "wineId": "varietales-trumpeter-reserva-pinot-noir", "reason": { "es": "Un Pinot Noir como alternativa tinta de perfil más delicado.", "en": "A Pinot Noir as a more delicate red-wine alternative.", "pt": "Um Pinot Noir como alternativa tinta de perfil mais delicado." } }
+      ]
+    },
+    {
+      "productIds": ["carnes-parrilla-p-2-personas"],
+      "recommendations": [
+        { "wineId": "malbec-trumpeter-reserva", "reason": { "es": "Un Malbec para acompañar la variedad e intensidad de los cortes de la parrilla.", "en": "A Malbec to accompany the variety and intensity of the grill cuts.", "pt": "Um Malbec para acompanhar a variedade e a intensidade dos cortes da parrilla." } },
+        { "wineId": "blends-gran-reserva", "reason": { "es": "Un blend de la carta como alternativa de mayor complejidad para compartir.", "en": "A blend from the menu as a more complex option to share.", "pt": "Um blend da carta como alternativa de maior complexidade para compartilhar." } }
+      ]
+    },
+    {
+      "productIds": ["carnes-parrilla-seleccion-p-2-personas"],
+      "recommendations": [
+        { "wineId": "malbec-norton-lote-agrelo", "reason": { "es": "Un Malbec para acompañar una selección amplia de carnes grilladas.", "en": "A Malbec to accompany a broad selection of grilled meats.", "pt": "Um Malbec para acompanhar uma seleção ampla de carnes grelhadas." } },
+        { "wineId": "cabernet-franc-gran-enemigo-el-cepillo", "reason": { "es": "Un Cabernet Franc de perfil premium para los cortes de mayor intensidad.", "en": "A premium-profile Cabernet Franc for the most intense cuts.", "pt": "Um Cabernet Franc de perfil premium para os cortes de maior intensidade." } }
+      ]
+    },
+    {
+      "productIds": ["platos-elaborados-bondiola-de-cerdo-a-la-mostaza-y-miel"],
+      "recommendations": [
+        { "wineId": "varietales-trumpeter-reserva-pinot-noir", "reason": { "es": "Un Pinot Noir acompaña la bondiola sin imponerse sobre la mostaza y miel.", "en": "A Pinot Noir accompanies the pork without overpowering the mustard and honey.", "pt": "Um Pinot Noir acompanha a bondiola sem se impor sobre a mostarda e o mel." } },
+        { "wineId": "chardonnay-saint-felicien", "reason": { "es": "Un Chardonnay como alternativa blanca para equilibrar esta preparación.", "en": "A Chardonnay as a white alternative to balance this preparation.", "pt": "Um Chardonnay como alternativa branca para equilibrar esta preparação." } }
+      ]
+    },
+    {
+      "productIds": ["platos-elaborados-matambre-vacuno-tiernizado-a-la-pizza", "platos-elaborados-matambre-vac-tiernizado-a-la-pizza-p-compartir"],
+      "recommendations": [
+        { "wineId": "cabernet-sauvignon-la-linda", "reason": { "es": "El Cabernet Sauvignon acompaña la intensidad de la carne, el tomate y los quesos.", "en": "Cabernet Sauvignon accompanies the intensity of the meat, tomato and cheeses.", "pt": "O Cabernet Sauvignon acompanha a intensidade da carne, do tomate e dos queijos." } },
+        { "wineId": "blends-gran-reserva", "reason": { "es": "Un blend como segunda opción para una preparación de sabor marcado.", "en": "A blend as a second option for a distinctly flavoured preparation.", "pt": "Um blend como segunda opção para uma preparação de sabor marcante." } }
+      ]
+    },
+    {
+      "productIds": ["pastas-velo-de-pasta-relleno"],
+      "recommendations": [
+        { "wineId": "chardonnay-santa-julia", "reason": { "es": "Un Chardonnay acompaña el relleno de calabaza, mozzarella y almendras con una intensidad equilibrada.", "en": "A Chardonnay accompanies the pumpkin, mozzarella and almond filling with balanced intensity.", "pt": "Um Chardonnay acompanha o recheio de abóbora, muçarela e amêndoas com intensidade equilibrada." } },
+        { "wineId": "varietales-trumpeter-reserva-pinot-noir", "reason": { "es": "Un Pinot Noir como alternativa tinta de perfil delicado para la pasta rellena.", "en": "A Pinot Noir as a delicate red alternative for the stuffed pasta.", "pt": "Um Pinot Noir como alternativa tinta de perfil delicado para a massa recheada." } }
+      ]
+    },
+    {
+      "productIds": ["pastas-pappardelle-relleno"],
+      "recommendations": [
+        { "wineId": "malbec-san-felipe-roble", "reason": { "es": "El Malbec acompaña el relleno de lomo y champiñón manteniendo el equilibrio del plato.", "en": "Malbec accompanies the sirloin and mushroom filling while keeping the dish balanced.", "pt": "O Malbec acompanha o recheio de lombo e cogumelo mantendo o equilíbrio do prato." } },
+        { "wineId": "cabernet-franc-alambrado", "reason": { "es": "Un Cabernet Franc como alternativa de mayor estructura para esta pasta.", "en": "A Cabernet Franc as a more structured alternative for this pasta.", "pt": "Um Cabernet Franc como alternativa de maior estrutura para esta massa." } }
+      ]
+    }
+  ]
+}
