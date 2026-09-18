@@ -1,4 +1,4 @@
-const CACHE = 'estancia-la-pasion-v7';
+const CACHE = 'estancia-la-pasion-v8';
 const CORE = ['/', '/manifest.webmanifest', '/icons/icon-192.png', '/images/restaurant/web/restaurant-photo-09-grill-table-640.webp'];
 
 self.addEventListener('install', event => {
@@ -30,7 +30,7 @@ self.addEventListener('fetch', event => {
       const refresh = fetch(event.request).then(response => {
         if (response.ok) caches.open(CACHE).then(cache => cache.put(event.request, response.clone()));
         return response;
-      });
+      }).catch(() => cached || Response.error());
       return cached || refresh;
     }));
     return;

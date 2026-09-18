@@ -79,13 +79,16 @@ if (buildWhatsAppUrl('invalid', sampleMessage) !== null || buildWhatsAppUrl(conf
 for (const validTable of ['1', '12', '999']) if (!isValidTableNumber(validTable)) errors.push(`Mesa válida rechazada: ${validTable}.`);
 for (const invalidTable of ['0', '-1', '1.5', '', 'abc']) if (isValidTableNumber(invalidTable)) errors.push(`Mesa inválida aceptada: ${invalidTable}.`);
 for (const language of ['ES', 'EN', 'PT']) {
-  for (const type of ['waiter', 'bill', 'other']) {
+  for (const type of ['waiter', 'billCash', 'billCard', 'billTransfer', 'other']) {
     const assistanceMessage = buildAssistanceMessage('12', type, language);
     const assistanceUrl = buildWhatsAppUrl(config.restaurant.whatsapp, assistanceMessage);
     if (!assistanceMessage?.includes('12') || !assistanceUrl?.startsWith('https://wa.me/5492616694496?text=')) errors.push(`Flujo de asistencia inválido: ${language}/${type}.`);
   }
 }
 if (buildAssistanceMessage('0', 'waiter', 'ES') !== null || buildAssistanceMessage('12', 'invalid', 'ES') !== null) errors.push('Se generó asistencia con mesa o solicitud inválida.');
+for (const [type, payment] of [['billCash', 'efectivo'], ['billCard', 'tarjeta'], ['billTransfer', 'transferencia']]) {
+  if (!buildAssistanceMessage('12', type, 'ES')?.includes(payment)) errors.push(`El mensaje de cuenta no indica ${payment}.`);
+}
 
 if (config.social.googleMaps !== 'https://maps.app.goo.gl/YJ88hoA9GAVYTgad7') errors.push('La URL de Google Maps no coincide con la oficial.');
 if (config.social.instagram !== 'https://www.instagram.com/restauranteestancialapasion/') errors.push('La URL de Instagram no coincide con la oficial.');
@@ -128,7 +131,7 @@ console.log(`Integridad verificada: ${products.length} productos, ${categories.l
 console.log(`Sommelier verificado: ${pairedProducts.length} productos con dos recomendaciones y todos los wineId válidos.`);
 console.log('Conversor verificado: ARS intacto, tasas USD/BRL válidas calculan y tasas inválidas no generan valores.');
 console.log('Reservas verificadas: fechas, 24 horarios, cantidad de personas y URL oficial de WhatsApp válidos.');
-console.log('Asistencia verificada: mesas válidas y tres solicitudes localizadas con destino oficial de WhatsApp.');
+console.log('Asistencia verificada: mesas válidas, cuenta con tres medios de pago y solicitudes ES/EN/PT con destino oficial de WhatsApp.');
 console.log('Feedback verificado: estrellas 1–5, comentario de hasta 300 caracteres y enlaces sociales oficiales.');
 console.log('Incentivo social verificado: configurado y desactivado por defecto.');
 console.log(`Fotografía verificada: ${photography.photos.length} originales reales y ${photoSources.size} derivados WebP sin asociaciones de producto.`);

@@ -49,7 +49,11 @@ export default function ExperienceFeedback({ language }) {
     setRating(value); setComment(''); setError(''); setPreparedUrl('');
   };
   const sendPrivateFeedback = () => {
-    if (!isValidFeedback(comment)) { setError(copy.empty); return; }
+    if (!isValidFeedback(comment)) {
+      setError(copy.empty);
+      requestAnimationFrame(() => document.querySelector('.feedback-field textarea')?.focus());
+      return;
+    }
     const message = buildFeedbackMessage(rating, comment, language);
     const url = buildWhatsAppUrl(config.restaurant.whatsapp, message);
     if (!url) { setError(copy.empty); return; }
@@ -81,9 +85,9 @@ export default function ExperienceFeedback({ language }) {
           {!preparedUrl ? <>
             <label className={`feedback-field ${error ? 'feedback-field--error' : ''}`}>
               <span>{copy.improve}</span>
-              <textarea value={comment} maxLength={FEEDBACK_MAX_LENGTH} onChange={event => { setComment(event.target.value); setError(''); }} placeholder={copy.placeholder} rows="5" aria-invalid={Boolean(error)} />
+              <textarea value={comment} maxLength={FEEDBACK_MAX_LENGTH} onChange={event => { setComment(event.target.value); setError(''); }} placeholder={copy.placeholder} rows="5" aria-invalid={Boolean(error)} aria-describedby={error ? 'feedback-comment-error' : undefined} />
               <small className="feedback-counter">{comment.length}/{FEEDBACK_MAX_LENGTH}</small>
-              {error && <small className="feedback-error" role="alert">{error}</small>}
+              {error && <small id="feedback-comment-error" className="feedback-error" role="alert">{error}</small>}
             </label>
             <button className="feedback-whatsapp" onClick={sendPrivateFeedback}><Icon name="chat" size={18}/><span>{copy.private}</span><Icon name="arrow" size={17}/></button>
             <p className="feedback-private-note">{copy.privateNote}</p>

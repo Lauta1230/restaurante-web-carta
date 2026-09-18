@@ -6,18 +6,29 @@ import ReservationFlow from './components/ReservationFlow';
 import AssistanceFlow from './components/AssistanceFlow';
 import ExperienceFeedback from './components/ExperienceFeedback';
 import RestaurantImage from './components/RestaurantImage';
-import { Button, Eyebrow, Icon, Modal, Reveal } from './components/UI';
+import { Button, Eyebrow, Icon, Reveal } from './components/UI';
 import translations from './data/translations.json';
 import config from './data/config.json';
 
+const SUPPORTED_LANGUAGES = ['ES', 'EN', 'PT'];
+const getInitialLanguage = () => {
+  try {
+    const stored = localStorage.getItem('elp-language');
+    return SUPPORTED_LANGUAGES.includes(stored) ? stored : 'ES';
+  } catch {
+    return 'ES';
+  }
+};
+
 export default function App() {
-  const [language, setLanguage] = useState(() => localStorage.getItem('elp-language') || 'ES');
-  const [modalOpen, setModalOpen] = useState(false);
+  const [language, setLanguage] = useState(getInitialLanguage);
   const [reservationOpen, setReservationOpen] = useState(false);
   const [assistanceOpen, setAssistanceOpen] = useState(false);
   const t = translations[language];
-  useEffect(() => { localStorage.setItem('elp-language', language); document.documentElement.lang = language.toLowerCase(); }, [language]);
-  const soon = useCallback(() => setModalOpen(true), []);
+  useEffect(() => {
+    try { localStorage.setItem('elp-language', language); } catch { /* Preferences still work when storage is unavailable. */ }
+    document.documentElement.lang = language.toLowerCase();
+  }, [language]);
   const openReservation = useCallback(() => setReservationOpen(true), []);
   const openWhatsApp = useCallback(() => window.open(`https://wa.me/${config.restaurant.whatsapp}`, '_blank', 'noopener,noreferrer'), []);
   const scrollMenu = () => document.querySelector('#carta')?.scrollIntoView({ behavior: 'smooth' });
@@ -71,6 +82,5 @@ export default function App() {
     <MobileDock copy={t.dock} onReserve={openReservation} onWhatsApp={openWhatsApp} onAssist={() => setAssistanceOpen(true)}/>
     <ReservationFlow open={reservationOpen} language={language} onClose={() => setReservationOpen(false)}/>
     <AssistanceFlow open={assistanceOpen} language={language} onClose={() => setAssistanceOpen(false)}/>
-    <Modal open={modalOpen} onClose={() => setModalOpen(false)} copy={t.modal}/>
   </div>;
 }

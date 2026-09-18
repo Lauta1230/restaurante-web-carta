@@ -52,10 +52,15 @@ export default function ReservationFlow({ open, language, onClose }) {
   useEffect(() => {
     if (!open) return;
     setForm(initialForm); setErrors({}); setStep('form');
+    const previousFocus = document.activeElement;
     document.body.classList.add('modal-open');
     const onKey = event => event.key === 'Escape' && onClose();
     addEventListener('keydown', onKey);
-    return () => { document.body.classList.remove('modal-open'); removeEventListener('keydown', onKey); };
+    return () => {
+      document.body.classList.remove('modal-open');
+      removeEventListener('keydown', onKey);
+      previousFocus?.focus();
+    };
   }, [open, onClose]);
 
   if (!open) return null;
@@ -71,6 +76,7 @@ export default function ReservationFlow({ open, language, onClose }) {
     if (!isValidReservationTime(form.time, openingTime, closingTime)) next.time = copy.timeError;
     if (!isValidPartySize(form.people)) next.people = copy.peopleError;
     setErrors(next);
+    if (Object.keys(next).length) requestAnimationFrame(() => document.querySelector('.reservation-flow [aria-invalid="true"]')?.focus());
     return !Object.keys(next).length;
   };
   const review = event => {
@@ -92,25 +98,25 @@ export default function ReservationFlow({ open, language, onClose }) {
       </header>
 
       {step === 'form' && <div className="reservation-stage" key="form">
-        <div className="reservation-heading"><span>01</span><h2 id="reservation-title">{copy.title}</h2><p>{copy.intro}</p></div>
+        <div className="reservation-heading"><span>01</span><h2 id="reservation-title" tabIndex="-1" autoFocus>{copy.title}</h2><p>{copy.intro}</p></div>
         <form className="reservation-form" onSubmit={review} noValidate>
-          <Field label={copy.name} error={errors.name}>
-            <input type="text" value={form.name} onChange={event => update('name', event.target.value)} placeholder={copy.namePlaceholder} autoComplete="name" aria-invalid={Boolean(errors.name)} required />
+          <Field label={copy.name} error={errors.name} errorId="reservation-name-error">
+            <input type="text" value={form.name} onChange={event => update('name', event.target.value)} placeholder={copy.namePlaceholder} autoComplete="name" aria-invalid={Boolean(errors.name)} aria-describedby={errors.name ? 'reservation-name-error' : undefined} required />
           </Field>
           <div className="reservation-form__row">
-            <Field label={copy.date} error={errors.date}>
-              <input type="date" min={today} value={form.date} onChange={event => update('date', event.target.value)} aria-invalid={Boolean(errors.date)} required />
+            <Field label={copy.date} error={errors.date} errorId="reservation-date-error">
+              <input type="date" min={today} value={form.date} onChange={event => update('date', event.target.value)} aria-invalid={Boolean(errors.date)} aria-describedby={errors.date ? 'reservation-date-error' : undefined} required />
             </Field>
-            <Field label={copy.time} error={errors.time}>
-              <select value={form.time} onChange={event => update('time', event.target.value)} aria-invalid={Boolean(errors.time)} required>
+            <Field label={copy.time} error={errors.time} errorId="reservation-time-error">
+              <select value={form.time} onChange={event => update('time', event.target.value)} aria-invalid={Boolean(errors.time)} aria-describedby={errors.time ? 'reservation-time-error' : undefined} required>
                 <option value="">—:—</option>{timeSlots.map(time => <option value={time} key={time}>{time}</option>)}
               </select>
             </Field>
           </div>
-          <Field label={copy.people} error={errors.people}>
+          <Field label={copy.people} error={errors.people} errorId="reservation-people-error">
             <div className="people-control">
               <button type="button" onClick={() => update('people', String(Math.max(1, Number(form.people || 1) - 1)))} aria-label="−">−</button>
-              <input type="number" min="1" step="1" inputMode="numeric" value={form.people} onChange={event => update('people', event.target.value)} placeholder={copy.peoplePlaceholder} aria-invalid={Boolean(errors.people)} required />
+              <input type="number" min="1" step="1" inputMode="numeric" value={form.people} onChange={event => update('people', event.target.value)} placeholder={copy.peoplePlaceholder} aria-invalid={Boolean(errors.people)} aria-describedby={errors.people ? 'reservation-people-error' : undefined} required />
               <button type="button" onClick={() => update('people', String((Number(form.people) || 0) + 1))} aria-label="+">+</button>
             </div>
           </Field>
@@ -120,7 +126,7 @@ export default function ReservationFlow({ open, language, onClose }) {
       </div>}
 
       {step === 'summary' && <div className="reservation-stage" key="summary">
-        <div className="reservation-heading"><span>02</span><small>{copy.summaryKicker}</small><h2 id="reservation-title">{copy.summaryTitle}</h2></div>
+        <div className="reservation-heading"><span>02</span><small>{copy.summaryKicker}</small><h2 id="reservation-title" tabIndex="-1" autoFocus>{copy.summaryTitle}</h2></div>
         <dl className="reservation-summary">
           <div><dt>{copy.name}</dt><dd>{form.name.trim()}</dd></div>
           <div><dt>{copy.date}</dt><dd>{formatReservationDate(form.date, language)}</dd></div>
@@ -134,7 +140,7 @@ export default function ReservationFlow({ open, language, onClose }) {
 
       {step === 'prepared' && <div className="reservation-stage reservation-stage--prepared" key="prepared">
         <div className="reservation-success"><Icon name="chat" size={28}/></div>
-        <small>{copy.preparedKicker}</small><h2 id="reservation-title">{copy.preparedTitle}</h2><p>{copy.preparedText}</p>
+        <small>{copy.preparedKicker}</small><h2 id="reservation-title" tabIndex="-1" autoFocus>{copy.preparedTitle}</h2><p>{copy.preparedText}</p>
         {whatsappUrl && <a className="reservation-primary reservation-primary--whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer"><Icon name="chat" size={18}/><span>{copy.openAgain}</span><Icon name="arrow" size={17}/></a>}
         <button className="reservation-secondary" onClick={onClose}>{copy.finish}</button>
       </div>}
@@ -144,9 +150,9 @@ export default function ReservationFlow({ open, language, onClose }) {
   </div>;
 }
 
-function Field({ label, error, children }) {
+function Field({ label, error, errorId, children }) {
   return <label className={`reservation-field ${error ? 'reservation-field--error' : ''}`}>
     <span>{label}<b aria-hidden="true">*</b></span>{children}
-    {error && <small role="alert">{error}</small>}
+    {error && <small id={errorId} role="alert">{error}</small>}
   </label>;
 }

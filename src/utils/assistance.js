@@ -4,10 +4,20 @@ const requestMessages = {
     EN: 'I would like to call the waiter.',
     PT: 'Gostaria de chamar o garçom.'
   },
-  bill: {
-    ES: 'Quisiera pedir la cuenta.',
-    EN: 'I would like to ask for the bill.',
-    PT: 'Gostaria de pedir a conta.'
+  billCash: {
+    ES: 'Quisiera pedir la cuenta. Medio de pago: efectivo.',
+    EN: 'I would like to ask for the bill. Payment method: cash.',
+    PT: 'Gostaria de pedir a conta. Forma de pagamento: dinheiro.'
+  },
+  billCard: {
+    ES: 'Quisiera pedir la cuenta. Medio de pago: tarjeta.',
+    EN: 'I would like to ask for the bill. Payment method: card.',
+    PT: 'Gostaria de pedir a conta. Forma de pagamento: cartão.'
+  },
+  billTransfer: {
+    ES: 'Quisiera pedir la cuenta. Medio de pago: transferencia.',
+    EN: 'I would like to ask for the bill. Payment method: bank transfer.',
+    PT: 'Gostaria de pedir a conta. Forma de pagamento: transferência.'
   },
   other: {
     ES: 'Tengo otra consulta.',

@@ -10,6 +10,14 @@ import RestaurantImage from './RestaurantImage';
 const localeKey = language => language.toLowerCase();
 const textFor = (field, language) => field?.[localeKey(language)] || field?.es || '';
 const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+const getInitialCurrency = () => {
+  try {
+    const saved = localStorage.getItem('elp-currency') || config.currency.default;
+    return saved === 'ARS' || isValidRate(config.currency.rates[saved]) ? saved : 'ARS';
+  } catch {
+    return 'ARS';
+  }
+};
 
 const ui = {
   ES: { eyebrow: 'Carta digital', title: 'Nuestra carta', subtitle: 'Explorá la propuesta completa de Estancia La Pasión.', search: 'Buscar un plato, bebida o vino', results: 'resultados', oneResult: 'resultado', emptyTitle: 'No encontramos resultados', emptyText: 'Probá con otro nombre o revisá las categorías.', clear: 'Limpiar búsqueda', products: 'opciones', categories: 'categorías', close: 'Cerrar detalle', official: 'Precio oficial en pesos argentinos', source: 'Carta oficial', winery: 'Bodega', unavailable: 'Tasa pendiente', pairing: 'Ver maridaje', pairingTitle: 'Maridaje sugerido', pairingIntro: 'Dos vinos de nuestra carta para acompañar este plato.', pairingClose: 'Cerrar maridaje', option: 'Opción equilibrada', otherOption: 'Opción premium', reference: 'Valor orientativo', rateDate: 'Tasa actualizada', reserve: 'Reservar mesa', reservePrompt: '¿Querés compartir esta experiencia?' },
@@ -75,10 +83,15 @@ function ProductModal({ product, pairing, winesById, language, currency, onClose
   useEffect(() => { setPairingOpen(false); }, [product]);
   useEffect(() => {
     if (!product) return;
+    const previousFocus = document.activeElement;
     document.body.classList.add('modal-open');
     const onKey = event => event.key === 'Escape' && onClose();
     addEventListener('keydown', onKey);
-    return () => { document.body.classList.remove('modal-open'); removeEventListener('keydown', onKey); };
+    return () => {
+      document.body.classList.remove('modal-open');
+      removeEventListener('keydown', onKey);
+      previousFocus?.focus();
+    };
   }, [product, onClose]);
   if (!product) return null;
   const description = textFor(product.description, language);
@@ -122,10 +135,7 @@ export default function DigitalMenu({ language, onReserve }) {
   const [active, setActive] = useState(menuData.categories[0].id);
   const [selected, setSelected] = useState(null);
   const validCurrencies = config.currency.available.filter(currency => currency === 'ARS' || isValidRate(config.currency.rates[currency]));
-  const [currency, setCurrency] = useState(() => {
-    const saved = localStorage.getItem('elp-currency') || config.currency.default;
-    return saved === 'ARS' || isValidRate(config.currency.rates[saved]) ? saved : 'ARS';
-  });
+  const [currency, setCurrency] = useState(getInitialCurrency);
   const categoryNav = useRef(null);
   const categories = useMemo(() => [...menuData.categories, ...winesData.categories], []);
   const products = useMemo(() => {
@@ -144,7 +154,9 @@ export default function DigitalMenu({ language, onReserve }) {
   }, [products, query, language]);
   const groups = useMemo(() => categories.map(category => ({ category, products: matching.filter(product => product.category === category.id) })).filter(group => group.products.length), [categories, matching]);
 
-  useEffect(() => { localStorage.setItem('elp-currency', currency); }, [currency]);
+  useEffect(() => {
+    try { localStorage.setItem('elp-currency', currency); } catch { /* Currency remains usable without persistence. */ }
+  }, [currency]);
 
   useEffect(() => {
     if (query) return;
