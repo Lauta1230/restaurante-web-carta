@@ -2,7 +2,7 @@
 
 Base visual y técnica mobile-first para la experiencia gastronómica digital de **Estancia La Pasión**, Mendoza.
 
-## Fases 1 a 6
+## Fases 1 a 7
 
 Esta entrega incluye:
 
@@ -27,7 +27,9 @@ Esta entrega incluye:
 - Feedback privado de 1–3 estrellas por WhatsApp y acceso opcional a Google para todas las puntuaciones.
 - Enlaces oficiales de Google Maps e Instagram centralizados en configuración.
 - Incentivo social configurable y desactivado hasta recibir confirmación comercial.
-- Manifest, iconos instalables y service worker con caché básico.
+- Nueve fotografías reales integradas como contenido editorial, sin asociaciones comerciales a productos.
+- Originales preservados y derivados WebP responsive con carga diferida fuera del hero.
+- Manifest, iconos instalables y service worker con estrategia actualizada para imágenes.
 - Animaciones sutiles con soporte para `prefers-reduced-motion`.
 
 No incluye reservas, sommelier, asistencia, reseñas ni integraciones externas.
@@ -59,10 +61,11 @@ src/
   App.jsx           composición editorial de la SPA
   styles.css        sistema visual y responsive
 public/
-  images/           recursos visuales temporales reemplazables
-  icons/            identidad PWA
+  images/restaurant/      originales fotográficos preservados
+  images/restaurant/web/  derivados WebP responsive
+  icons/                  identidad PWA
   manifest.webmanifest
   sw.js
 ```
 
-Los recursos en `public/images/` son placeholders visuales temporales y pueden sustituirse manteniendo los mismos nombres o actualizando las referencias CSS.
+El inventario y los textos alternativos se mantienen en `src/data/photography.json`. Las fotografías no están asociadas a productos concretos de la carta.

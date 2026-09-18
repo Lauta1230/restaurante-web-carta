@@ -5,6 +5,7 @@ import DigitalMenu from './components/DigitalMenu';
 import ReservationFlow from './components/ReservationFlow';
 import AssistanceFlow from './components/AssistanceFlow';
 import ExperienceFeedback from './components/ExperienceFeedback';
+import RestaurantImage from './components/RestaurantImage';
 import { Button, Eyebrow, Icon, Modal, Reveal } from './components/UI';
 import translations from './data/translations.json';
 import config from './data/config.json';
@@ -24,7 +25,7 @@ export default function App() {
     <Header language={language} setLanguage={setLanguage} copy={t.nav} onReserve={openReservation} onAssist={() => setAssistanceOpen(true)}/>
     <main>
       <section className="hero" id="inicio">
-        <div className="hero__image" aria-hidden="true" />
+        <RestaurantImage id="restaurant-photo-09-grill-table" language={language} className="hero__image" decorative loading="eager" sizes="100vw"/>
         <div className="hero__shade" />
         <div className="hero__content">
           <div className="hero__line" />
@@ -38,18 +39,18 @@ export default function App() {
 
       <section className="intro section" id="experiencia">
         <Reveal className="intro__copy"><Eyebrow>{t.intro.eyebrow}</Eyebrow><h2>{t.intro.title}</h2><p>{t.intro.text}</p></Reveal>
-        <Reveal className="intro__seal" delay={120}><span className="seal__ring">MENDOZA · ARGENTINA ·</span><strong>LP</strong><small>785</small></Reveal>
+        <Reveal className="intro__visual" delay={120}><RestaurantImage id="restaurant-photo-07-roasted-vegetables" language={language} sizes="(min-width: 700px) 340px, 82vw"/><span className="intro__seal"><span className="seal__ring">MENDOZA · ARGENTINA ·</span><strong>LP</strong><small>785</small></span></Reveal>
       </section>
 
       <DigitalMenu language={language} onReserve={openReservation} />
 
       <section className="fire section">
-        <div className="fire__visual" aria-hidden="true"><div className="fire__ember"/><span>FUEGO</span></div>
+        <div className="fire__visual"><RestaurantImage id="restaurant-photo-01-meat-detail" language={language} sizes="(min-width: 700px) 55vw, 94vw"/><span aria-hidden="true">FUEGO</span></div>
         <Reveal className="fire__copy"><Eyebrow>{t.fire.eyebrow}</Eyebrow><h2>{t.fire.title}</h2><p>{t.fire.text}</p><div className="ornament"><i/><span>✦</span><i/></div></Reveal>
       </section>
 
       <section className="wine section">
-        <div className="wine__image"><span className="wine__label"><Icon name="grape"/><small>MENDOZA</small><b>32° 53′ S</b></span></div>
+        <div className="wine__image"><RestaurantImage id="restaurant-photo-04-cheese-and-wine" language={language} sizes="(min-width: 700px) 48vw, 90vw"/><span className="wine__label"><Icon name="grape"/><small>MENDOZA</small><b>32° 53′ S</b></span></div>
         <Reveal className="wine__copy"><Eyebrow>{t.wine.eyebrow}</Eyebrow><h2>{t.wine.title}</h2><p>{t.wine.text}</p></Reveal>
       </section>
 

@@ -5,6 +5,7 @@ import config from '../data/config.json';
 import pairingsData from '../data/pairings.json';
 import { convertFromARS, formatARS, formatCurrency, isValidRate } from '../utils/currency';
 import { Icon } from './UI';
+import RestaurantImage from './RestaurantImage';
 
 const localeKey = language => language.toLowerCase();
 const textFor = (field, language) => field?.[localeKey(language)] || field?.es || '';
@@ -51,6 +52,21 @@ function PairingPanel({ pairing, winesById, language, currency, onClose }) {
       {currency !== 'ARS' && <p className="pairing-panel__reference">≈ {copy.reference}</p>}
     </aside>
   </div>;
+}
+
+const editorialBreaks = {
+  entradas: 'restaurant-photo-06-empanada-selection',
+  carnes: 'restaurant-photo-02-table-spread',
+  'platos-elaborados': 'restaurant-photo-03-plated-dish',
+  pastas: 'restaurant-photo-05-pasta-dish',
+  postres: 'restaurant-photo-08-flan-dessert'
+};
+
+function MenuEditorialBreak({ photoId, language }) {
+  return <figure className={`menu-editorial-photo menu-editorial-photo--${photoId}`}>
+    <RestaurantImage id={photoId} language={language} sizes="(min-width: 960px) 1180px, 100vw"/>
+    <figcaption><span>Estancia La Pasión</span><small>Mendoza · Argentina</small></figcaption>
+  </figure>;
 }
 
 function ProductModal({ product, pairing, winesById, language, currency, onClose }) {
@@ -180,13 +196,14 @@ export default function DigitalMenu({ language, onReserve }) {
 
     <div className={`menu-content ${query ? 'menu-content--searching' : ''}`}>
       {query && <div className="search-summary"><span>{matching.length} {matching.length === 1 ? copy.oneResult : copy.results}</span><button onClick={() => setQuery('')}>{copy.clear}</button></div>}
-      {groups.map(({ category, products: groupProducts }, index) => <section className="menu-category" id={`menu-${category.id}`} data-category={category.id} key={category.id} style={{ '--category-index': index }}>
-        <header className="menu-category__header">
-          <span>{String(categories.findIndex(item => item.id === category.id) + 1).padStart(2,'0')}</span>
-          <div><h3>{textFor(category.name, language)}</h3>{category.note && <p>{textFor(category.note, language)}</p>}{category.description && <p className="menu-category__description">{textFor(category.description, language)}</p>}</div>
-          <small>{groupProducts.length}</small>
-        </header>
-        <div className="menu-category__items">{groupProducts.map(product => <MenuItem product={product} language={language} currency={currency} hasPairing={Boolean(pairingsByProduct[product.id])} onOpen={setSelected} key={product.id}/>)}</div>
+      {groups.map(({ category, products: groupProducts }, index) => <section className="menu-category" id={`menu-${category.id}`} data-category={category.id} style={{ '--category-index': index }} key={category.id}>
+          <header className="menu-category__header">
+            <span>{String(categories.findIndex(item => item.id === category.id) + 1).padStart(2,'0')}</span>
+            <div><h3>{textFor(category.name, language)}</h3>{category.note && <p>{textFor(category.note, language)}</p>}{category.description && <p className="menu-category__description">{textFor(category.description, language)}</p>}</div>
+            <small>{groupProducts.length}</small>
+          </header>
+          <div className="menu-category__items">{groupProducts.map(product => <MenuItem product={product} language={language} currency={currency} hasPairing={Boolean(pairingsByProduct[product.id])} onOpen={setSelected} key={product.id}/>)}</div>
+          {!query && editorialBreaks[category.id] && <MenuEditorialBreak photoId={editorialBreaks[category.id]} language={language}/>}
       </section>)}
       {!matching.length && <div className="menu-empty"><span>LP</span><h3>{copy.emptyTitle}</h3><p>{copy.emptyText}</p><button onClick={() => setQuery('')}>{copy.clear}</button></div>}
     </div>

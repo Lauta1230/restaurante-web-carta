@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "source": "Fotografías reales proporcionadas para Estancia La Pasión",
+  "photos": [
+    {
+      "id": "restaurant-photo-01-meat-detail",
+      "classification": "meat-detail",
+      "original": "public/images/restaurant/AHRPTWko1t45mpFji-ChpwPbz76lnXN8VlAemRW3oQ8mmkLIPTxUfyPZIO0SEhyr1iIrfaCk36_glyd9vkzf6qIbbnMfZ9T5OuxBGPvi0ooUs37iut4fO8gME8BL4muNQbQOvMiLZdqb2gw1960-h4032-n-k-no.jpg",
+      "sources": [
+        {
+          "src": "/images/restaurant/web/restaurant-photo-01-meat-detail-640.webp",
+          "width": 640,
+          "type": "image/webp"
+        },
+        {
+          "src": "/images/restaurant/web/restaurant-photo-01-meat-detail-1200.webp",
+          "width": 1200,
+          "type": "image/webp"
+        }
+      ],
+      "alt": {
+        "es": "Detalle de carne asada servida en mesa.",
+        "en": "Close detail of grilled meat served at the table.",
+        "pt": "Detalhe de carne assada servida à mesa."
+      },
+      "productId": null
+    },
+    {
+      "id": "restaurant-photo-02-table-spread",
+      "classification": "table-spread",
+      "original": "public/images/restaurant/AHRPTWl_TyFvDyI9CNI1BhKIkGY_t80MDaBk-SCGunMGkZ0-7ZqWmFt5KeRUmTFsdiMBtwLL1K3PWv8soxbxIK0ASmmfdYGA_GKt-FSdNALnyqvGm-eKQzHYUxhdEyrzTN8b3IWhbCPw3072-h4080-n-k-no.jpg",
+      "sources": [
+        {
+          "src": "/images/restaurant/web/restaurant-photo-02-table-spread-640.webp",
+          "width": 640,
+          "type": "image/webp"
+        },
+        {
+          "src": "/images/restaurant/web/restaurant-photo-02-table-spread-1200.webp",
+          "width": 1200,
+          "type": "image/webp"
+        }
+      ],
+      "alt": {
+        "es": "Mesa con parrillada, vegetales y otros platos.",
+        "en": "Table with grilled meats, vegetables and other dishes.",
+        "pt": "Mesa com carnes grelhadas, vegetais e outros pratos."
+      },
+      "productId": null
+    },
+    {
+      "id": "restaurant-photo-03-plated-dish",
+      "classification": "plated-dish",
+      "original": "public/images/restaurant/AHRPTWlbq1LvczTGKN5nRHytc1uyC3p9CIY8belJ8p00wPeQ64BAWoFHhlvvrt2q7SthkKlyMlRINtKLMU8G8KKcYGUZF55FfVN5tsIJitXTJJk2PohCQzFFl3PveuU_cT9I8OPyXOwzAww1360-h1110-n-k-no.jpg",
+      "sources": [
+        {
+          "src": "/images/restaurant/web/restaurant-photo-03-plated-dish-640.webp",
+          "width": 640,
+          "type": "image/webp"
+        },
+        {
+          "src": "/images/restaurant/web/restaurant-photo-03-plated-dish-1200.webp",
+          "width": 1200,
+          "type": "image/webp"
+        }
+      ],
+      "alt": {
+        "es": "Plato de milanesa con salsa, queso y papas fritas.",
+        "en": "Plate of milanesa with sauce, cheese and fries.",
+        "pt": "Prato de milanesa com molho, queijo e batatas fritas."
+      },
+      "productId": null
+    },
+    {
+      "id": "restaurant-photo-04-cheese-and-wine",
+      "classification": "food-and-wine",
+      "original": "public/images/restaurant/AHRPTWm0UPsa0LJSQGWImul83TPf1BMfKNx8FN1PCVpQDuztZ9LfOaBCbZGRWFkS3GIPs2TtoN-GkJ6lp3qEcZcoGQWNWbmbsJQ3rBeXm42ZZ3tS7tbqmWgp2fVJZIeiB1Si-gS55F7MZQw2066-h3672-n-k-no.jpg",
+      "sources": [
+        {
+          "src": "/images/restaurant/web/restaurant-photo-04-cheese-and-wine-640.webp",
+          "width": 640,
+          "type": "image/webp"
+        },
+        {
+          "src": "/images/restaurant/web/restaurant-photo-04-cheese-and-wine-1200.webp",
+          "width": 1200,
+          "type": "image/webp"
+        }
+      ],
+      "alt": {
+        "es": "Preparación de queso fundido servida junto a una copa de vino tinto.",
+        "en": "Melted cheese preparation served alongside a glass of red wine.",
+        "pt": "Preparação de queijo derretido servida com uma taça de vinho tinto."
+      },
+      "productId": null
+    },
+    {
+      "id": "restaurant-photo-05-pasta-dish",
+      "classification": "pasta-dish",
+      "original": "public/images/restaurant/AHRPTWmEPN8rwFET4xieeduhjHYB7AC7_Bsxj9OtMi0WmYz73up3rx3AD9iI3SUuY7bi-3wBnKBr52HK7AXe79qU2jancraSuoycdVLMLFrqeghwYLQHVC8E908WeTYawqN9crs2y2ww3000-h4000-n-k-no.jpg",
+      "sources": [
+        {
+          "src": "/images/restaurant/web/restaurant-photo-05-pasta-dish-640.webp",
+          "width": 640,
+          "type": "image/webp"
+        },
+        {
+          "src": "/images/restaurant/web/restaurant-photo-05-pasta-dish-1200.webp",
+          "width": 1200,
+          "type": "image/webp"
+        }
+      ],
+      "alt": {
+        "es": "Plato de pasta con salsa de tomate y queso.",
+        "en": "Pasta dish with tomato sauce and cheese.",
+        "pt": "Prato de massa com molho de tomate e queijo."
+      },
+      "productId": null
+    },
+    {
+      "id": "restaurant-photo-06-empanada-selection",
+      "classification": "empanada-selection",
+      "original": "public/images/restaurant/AHRPTWn5y2-JD_uYgQNA2X9x887sWN85RrgqA6ye088pED-h73_wzUvICBnY5__HPSYPwmYx6A6yL5AZQoFj0R_eWnTd_Zg0eRpGqNGv3PcFGcu45UpECRHdy1esTbSieYgVQgePlQ06Www1841-h3271-n-k-no.jpg",
+      "sources": [
+        {
+          "src": "/images/restaurant/web/restaurant-photo-06-empanada-selection-640.webp",
+          "width": 640,
+          "type": "image/webp"
+        },
+        {
+          "src": "/images/restaurant/web/restaurant-photo-06-empanada-selection-1200.webp",
+          "width": 1200,
+          "type": "image/webp"
+        }
+      ],
+      "alt": {
+        "es": "Selección de empanadas servida con salsa criolla.",
+        "en": "Selection of empanadas served with salsa criolla.",
+        "pt": "Seleção de empanadas servida com molho criollo."
+      },
+      "productId": null
+    },
+    {
+      "id": "restaurant-photo-07-roasted-vegetables",
+      "classification": "roasted-vegetables",
+      "original": "public/images/restaurant/AHRPTWntpsd67k3URbXJsIcwWYxKrof4Vc4_2TnydW-YYmHlM31iriSQfhgXzonYzDbruGt9_Q5usIZX4YLqfO7KGyQH4kc1azojevl9DhSoXr7HKyUxpWO8-tGq4Yso39pFuOjMFWnBw2268-h4032-n-k-no.jpg",
+      "sources": [
+        {
+          "src": "/images/restaurant/web/restaurant-photo-07-roasted-vegetables-640.webp",
+          "width": 640,
+          "type": "image/webp"
+        },
+        {
+          "src": "/images/restaurant/web/restaurant-photo-07-roasted-vegetables-1200.webp",
+          "width": 1200,
+          "type": "image/webp"
+        }
+      ],
+      "alt": {
+        "es": "Plato de vegetales asados.",
+        "en": "Plate of roasted vegetables.",
+        "pt": "Prato de vegetais assados."
+      },
+      "productId": null
+    },
+    {
+      "id": "restaurant-photo-08-flan-dessert",
+      "classification": "dessert",
+      "original": "public/images/restaurant/AHRPTWnxcozckpNeDiJPP1gb_B87Gw4oCIwjpS10FPyen9jshxRH9UazaYLI6Nlf8TU1BYD8F_Gp0LMCgbuMUDJU2smKrA1A_-hUkUrTaVYc0NLiZsH9EiZmS-mm_LO87N9OsqXSPGglw4080-h3072-n-k-no.jpg",
+      "sources": [
+        {
+          "src": "/images/restaurant/web/restaurant-photo-08-flan-dessert-640.webp",
+          "width": 640,
+          "type": "image/webp"
+        },
+        {
+          "src": "/images/restaurant/web/restaurant-photo-08-flan-dessert-1200.webp",
+          "width": 1200,
+          "type": "image/webp"
+        }
+      ],
+      "alt": {
+        "es": "Postre de flan acompañado con dulce de leche.",
+        "en": "Flan dessert served with dulce de leche.",
+        "pt": "Sobremesa de flan acompanhada de doce de leite."
+      },
+      "productId": null
+    },
+    {
+      "id": "restaurant-photo-09-grill-table",
+      "classification": "grill-table",
+      "original": "public/images/restaurant/AHRPTWnzHu-IaJt280Lp57jdbtllZwET5HZKsrNIma4JpNMfQr2b1i58cfWZZT0OJ0HGilN8YYAYDYNm8RVYdY8iEjl2Gc5gRnNmdmmPBmvNfHZFqgZhayuUXSB27eojLQPR_hPbI2TEcAw4624-h2604-n-k-no.jpg",
+      "sources": [
+        {
+          "src": "/images/restaurant/web/restaurant-photo-09-grill-table-640.webp",
+          "width": 640,
+          "type": "image/webp"
+        },
+        {
+          "src": "/images/restaurant/web/restaurant-photo-09-grill-table-1200.webp",
+          "width": 1200,
+          "type": "image/webp"
+        },
+        {
+          "src": "/images/restaurant/web/restaurant-photo-09-grill-table-1600.webp",
+          "width": 1600,
+          "type": "image/webp"
+        }
+      ],
+      "alt": {
+        "es": "Parrillada servida en mesa junto a una ensalada.",
+        "en": "Mixed grill served at the table with a salad.",
+        "pt": "Parrillada servida à mesa com uma salada."
+      },
+      "productId": null
+    }
+  ]
+}

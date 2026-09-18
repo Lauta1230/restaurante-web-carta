@@ -1,6 +1,8 @@
+import fs from 'node:fs';
 import menu from '../src/data/menu.json' with { type: 'json' };
 import wines from '../src/data/wines.json' with { type: 'json' };
 import pairings from '../src/data/pairings.json' with { type: 'json' };
+import photography from '../src/data/photography.json' with { type: 'json' };
 import config from '../src/data/config.json' with { type: 'json' };
 import { convertFromARS, isValidRate } from '../src/utils/currency.js';
 import { buildReservationMessage, buildWhatsAppUrl, createTimeSlots, isValidPartySize, isValidReservationDate, isValidReservationTime } from '../src/utils/reservation.js';
@@ -100,6 +102,24 @@ for (const language of ['ES', 'EN', 'PT']) {
 if (buildFeedbackMessage(0, 'Comentario', 'ES') !== null || buildFeedbackMessage(2, '   ', 'ES') !== null) errors.push('Se generó feedback con datos inválidos.');
 if (config.socialIncentive.enabled !== false) errors.push('El incentivo social debe permanecer desactivado hasta confirmación comercial.');
 
+if (photography.photos.length !== 9) errors.push(`Se esperaban 9 fotografías reales; hay ${photography.photos.length}.`);
+const photoIds = new Set();
+const photoSources = new Set();
+for (const photo of photography.photos) {
+  if (photoIds.has(photo.id)) errors.push(`ID de fotografía duplicado: ${photo.id}.`);
+  photoIds.add(photo.id);
+  if (!fs.existsSync(photo.original)) errors.push(`Original inexistente: ${photo.original}.`);
+  if (photo.productId !== null) errors.push(`${photo.id}: asociación de producto no validada.`);
+  if (!photo.alt?.es || !photo.alt?.en || !photo.alt?.pt) errors.push(`${photo.id}: alt text incompleto.`);
+  for (const source of photo.sources) {
+    const diskPath = `public${source.src}`;
+    if (!fs.existsSync(diskPath)) errors.push(`Imagen responsive inexistente: ${diskPath}.`);
+    if (photoSources.has(source.src)) errors.push(`Fuente de imagen duplicada: ${source.src}.`);
+    photoSources.add(source.src);
+  }
+}
+if (photoSources.size !== 19) errors.push(`Se esperaban 19 derivados WebP; hay ${photoSources.size}.`);
+
 if (errors.length) {
   console.error(errors.join('\n'));
   process.exit(1);
@@ -111,3 +131,4 @@ console.log('Reservas verificadas: fechas, 24 horarios, cantidad de personas y U
 console.log('Asistencia verificada: mesas válidas y tres solicitudes localizadas con destino oficial de WhatsApp.');
 console.log('Feedback verificado: estrellas 1–5, comentario de hasta 300 caracteres y enlaces sociales oficiales.');
 console.log('Incentivo social verificado: configurado y desactivado por defecto.');
+console.log(`Fotografía verificada: ${photography.photos.length} originales reales y ${photoSources.size} derivados WebP sin asociaciones de producto.`);
