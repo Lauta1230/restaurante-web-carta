@@ -170,7 +170,12 @@ export default function DigitalMenu({ language, onReserve }) {
   }, [categories, query]);
 
   useEffect(() => {
-    categoryNav.current?.querySelector(`[data-nav="${active}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    const nav = categoryNav.current;
+    const item = nav?.querySelector(`[data-nav="${active}"]`);
+    if (!nav || !item) return;
+    const centeredLeft = item.offsetLeft - (nav.clientWidth - item.offsetWidth) / 2;
+    const left = Math.max(0, Math.min(centeredLeft, nav.scrollWidth - nav.clientWidth));
+    nav.scrollTo({ left, behavior: 'smooth' });
   }, [active]);
 
   const goToCategory = id => {
